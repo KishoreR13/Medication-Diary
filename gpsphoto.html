@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gpsphoto.css">
+    <title>Photo Upload</title>
+</head>
+<body>
+    <header>
+        <h1>Upload Image</h1>
+    </header>
+    <main>
+        <section id="photo-upload">
+            <form id="upload-form">
+                <label for="photo-input">Select Photo</label>
+                <input type="file" id="photo-input" accept="image/*" required>
+
+                <label for="photo-time">Photo Time</label>
+                <input type="datetime-local" id="photo-time" required>
+
+                <button type="button" onclick="uploadPhoto()">Upload Photo</button>
+                <div id="status-message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="gpsphoto.js"></script>
+</body>
+</html>
+
+
